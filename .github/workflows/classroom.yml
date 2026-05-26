@@ -25,7 +25,7 @@ jobs:
         with:
           test-name: test1
           command: |
-            java TempConverter < tests/1_input.txt > actual.txt
+            java HelloWorld < tests/1_input.txt > actual.txt
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/1_expected.txt)
             # Search for that value inside the student's output
