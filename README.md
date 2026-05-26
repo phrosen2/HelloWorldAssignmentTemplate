@@ -40,6 +40,3 @@ This is PA01.
 pop up in a terminal window with a blinking cursor on the next line.
 
 Follow the submission instructions to push your changes to the autograder, and then check for the green arrow on github.
-
-
- the header is on top of the code        |
