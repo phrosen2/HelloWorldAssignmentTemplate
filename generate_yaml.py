@@ -39,7 +39,7 @@ for input_file in inputs:
         with:
           test-name: test{num}
           command: |
-            java TempConverter < tests/{input_file} > actual.txt
+            java HelloWorld < tests/{input_file} > actual.txt
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/{output_file})
             # Search for that value inside the student's output
