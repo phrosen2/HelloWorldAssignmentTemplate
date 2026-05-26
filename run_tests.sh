@@ -12,7 +12,7 @@ for i in tests/*input.txt; do
     expected="tests/${num}_expected.txt"
     total=$((total + 1))
 
-    actual=$(java TempConverter < "$i")
+    actual=$(java HelloWorld < "$i")
 
     # check for contains instead of exact match (careful with newlines)
     if grep -q -f $expected <(echo "$actual"); then
@@ -40,16 +40,6 @@ for i in tests/*input.txt; do
       #  echo $actual
    # fi
 done
-
-#Code Checks
-echo "Checking Scanner..."
-total=$((total + 1))
-if grep -q "Scanner" TempConverter.java; then
-    echo "Scanner: PASS (+1)"
-    score=$((score + 1))
-else
-    echo "Scanner: FAIL"
-fi
 
 
 # Final score
